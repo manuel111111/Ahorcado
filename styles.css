@@ -1,0 +1,199 @@
+*{
+  margin: 0;
+  text-align: center;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+body{
+  margin: 0px;
+  background: url(./imagenes1/ad.jpg) no-repeat center;
+  background-size:100% 80%;
+  font-family: 'Playfair Display', serif;
+  min-height: 100vh;
+}
+
+.logo{
+  width: 100%;
+  height: 80%;
+
+}
+.logo1{
+  padding: 20px;
+  width: 800px;
+  height: 400px;
+
+}
+
+h1{
+  text-align: center;
+  font-size: 30px;
+  padding: 30px;
+}
+#titulo{
+  text-transform: uppercase;
+  font-weight: bold;
+  color: #652e6b;
+  font-size: 50px;
+}
+#btInicio{
+  text-transform: uppercase;
+  font-weight: bold;
+  color: rgb(27, 67, 54);
+  font-size: 40px;
+}
+#final{
+  display: none;
+  font-size: large;
+  margin-top: 40px;
+  color: steelblue;
+}
+#reset{
+  display: none;
+  font-size: large;
+  background-color: aliceblue;
+  color: #272c2c;
+  width: 125px;
+  height: 25px;
+}
+
+.botones-inicio{
+ position:absolute;top: 50%;
+
+}
+
+.tablero{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+#bt{
+ position: relative;
+ top: 250px;
+ text-decoration: none;
+ box-sizing: border-box;
+ font-weight: bold;
+ border: 1px solid #000000;
+ border-radius: 10px;
+ background-color: rgb(247, 245, 241);
+
+}
+.botones-inicio{
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  align-items: center;
+}
+
+button{
+  margin: 25px auto;
+  background: #0A3871;
+  border-radius: 24px;
+  color: aliceblue;
+  width: 350px;
+  height: 75px;
+  font-size: larger;
+}
+button:hover{
+  background-color: #193a62;
+  color: rgba(255, 0, 0, 0.408);
+  font-weight: bolder;
+  font-size: x-large;
+  cursor: pointer;
+}
+
+#agregar{
+  font-size: large;
+  width: 550px;
+  height: 40px;
+
+}
+
+#horca{
+  display: none;
+  width: 400px;
+  height: 400px;
+  position: fixed;
+  top: 65px;
+  left: 0;
+}
+
+.letras{
+  text-align: center;
+  font-size: 50px;
+  position: fixed;
+  bottom: 300px;
+ 
+}
+
+
+
+.bottom-container {
+  background-color: #3b4d64;
+  height: 35px;
+  width: 100%;
+  padding: 10px;
+  position: fixed;
+  bottom: 0;
+}
+.bottom-container a {
+  color: #11999e;
+  margin: 10px 25px;
+  text-decoration: none;
+}
+a:hover {
+  color: #272c2c;
+}
+
+.bottom-container p {
+  color: #eaf6f6;
+  font-size: small;
+  padding-top: 10px;
+}
+
+@media (max-width: 768px) {
+  * {
+    width: auto;
+  }
+  .tablero{
+    flex-direction: column;
+  }
+  #horca{
+    display: none;
+    width: 400px;
+    height: 400px;
+    position: fixed;
+    top: 100px;
+    left: 0;
+  }
+  .letras{
+    position: fixed;
+    bottom: 100px;
+    right: 100px;
+  }
+  #logo{
+    position: relative;
+  }
+  #secreto{
+    text-align: center;
+    border: 1px solid green;
+    border-radius: 5px;
+    background-color: aliceblue;
+  }
+  h3{
+    font-size: xx-large;
+  }
+  #final{
+    display: none;
+    font-size: 12cm;
+    color: steelblue;
+    border: 1px solid green;
+    border-radius: 5px;
+    background-color: aliceblue;
+  }
+}
+#ms{
+ position: relative;
+ top: 800px;
+ 
+}
